@@ -1,0 +1,28 @@
+.serviceItem {
+    text-align: center;
+    /* Centra el texto del elemento horizontalmente */
+
+    &p {
+        margin-bottom: 15px;
+        /* Establece un margen inferior de 15 píxeles para el elemento p */
+    }
+
+    & a {
+        color: var(--primary-color);
+        /* Establece el color del texto del enlace a la variable --primary-color */
+        text-decoration: none;
+        /* Elimina el subrayado que se muestra por defecto en los enlaces */
+    }
+
+    & img {
+        min-height: 230px;
+        /* Establece la altura mínima del elemento img a 230 píxeles */
+    }
+
+    & p {
+        margin: 0 auto 20px;
+        /* Centra el elemento horizontalmente y establece un margen inferior de 20 píxeles */
+        max-width: 316px;
+        /* Establece el ancho máximo del elemento p a 316 píxeles */
+    }
+}

@@ -1,0 +1,40 @@
+.faqs {
+    background-color: var(--gray);
+    padding: 50px 0 100px;
+  
+    & h2,
+    & p {
+        margin-bottom: 20px;
+    }
+  }
+  
+  .faqsContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 80px;
+  }
+  
+  .faqsItem {
+    cursor: pointer;
+    box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60/12%);
+    /* Añade una sombra al botón con un color gris oscuro y una opacidad del 39% */
+  }
+  
+  .faqsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media (min-width:786px) {
+    .faqsContainer {
+        gap: 30px;
+    }
+}
+
+@media (min-width:1024px) {
+    .faqsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+    }
+}

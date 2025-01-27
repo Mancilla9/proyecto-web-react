@@ -1,0 +1,37 @@
+/* strategy-styles */
+.strategy {
+    background-color: var(--gray);
+    padding: 50px 0 100px;
+    /* Añade un espacio interno al elemento con 50 píxeles de padding superior e inferior y 0 píxeles de padding izquierdo y derecho */
+
+    & h2 {
+        margin-bottom: 30px;
+    }
+
+    & p {
+        margin-bottom: 20px;
+    }
+}
+
+.strategyContainer {
+    align-items: center;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.strategyCardsContainer {
+    display: flex;
+    /* Convierte el elemento en un contenedor flexible, permitiendo organizar sus elementos hijos en una fila o columna y controlar su distribución y alineación */
+    flex-direction: column;
+    /* Establece la dirección del flujo de los elementos flexibles en columna vertical, uno debajo del otro */
+    gap: 40px;
+}
+
+
+@media (min-width:786px) {
+    .strategyContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

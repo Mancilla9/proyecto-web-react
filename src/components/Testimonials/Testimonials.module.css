@@ -1,0 +1,30 @@
+/*   testimonials-styles */
+.testimonials {
+    background-color: var(--light-gray);
+    padding: 70px 0;
+
+    & h2 {
+        max-width: 670px;
+        margin: 0 auto 50px;
+        text-align: center;
+    }
+}
+
+.testimonialsList {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    /* Establece un espacio de 20 píxeles entre los elementos de la cuadrícula, tanto en filas como en columnas */
+}
+
+@media (min-width:786px) {
+    .testimonialsList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .testimonialsList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

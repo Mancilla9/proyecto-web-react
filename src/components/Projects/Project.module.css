@@ -1,0 +1,27 @@
+/* projects styles */
+.projects {
+    padding: 50px 0 100px;
+
+    & h2 {
+        margin: 0 auto 50px;
+        max-width: 780px;
+        text-align: center;
+    }
+
+}
+
+.projectsContainer {
+    display: grid;
+    /* Convierte el elemento en un contenedor flexible, permitiendo organizar sus elementos hijos en una fila o columna y controlar su distribución y alineación */
+    grid-template-columns: repeat(1, 1fr);
+    /* Crea una cuadrícula con 3 columnas de igual ancho */
+    gap: 30px;
+    /* Establece un espacio de 20 píxeles entre los elementos de la cuadrícula, tanto en filas como en columnas */
+}
+
+@media (min-width:786px) {
+    .projectsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        /* Crea una cuadrícula con 3 columnas de igual ancho */
+    }
+}

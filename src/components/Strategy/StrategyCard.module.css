@@ -1,0 +1,40 @@
+
+.strategyCard {
+    align-items: center;
+    /* Centra verticalmente los elementos hijos dentro del contenedor flex */
+    background-color: var(--white);
+    box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60/12%);
+    display: flex;
+    gap: 20px;
+    max-width: 520px;
+    padding: 20px;
+    position: relative;
+    /* Permite posicionar el elemento de forma relativa a su posición normal en el flujo del documento, sin afectar a otros elementos. Es necesario para que funcione el desplazamiento 'left: 50px' del segundo elemento */
+
+
+    & .order {
+        background-color: var(--skyblue);
+        border-radius: 100%;
+        color: var(--primary-color);
+        font-size: 22px;
+        font-weight: 600;
+        padding: 10px 12px;
+        width: fit-content;
+        /* Ajusta el ancho del elemento al contenido, haciendo que el elemento sea tan ancho como su contenido y no más */
+    }
+}
+
+@media (min-width:1280px) {
+    .strategyCard {
+
+        &:nth-child(2) {
+            /* Selecciona el segundo elemento hijo dentro del contenedor padre y le aplica un desplazamiento de 50px hacia la derecha */
+            left: 50px;
+        }
+
+        &:nth-child(3) {
+            /* Selecciona el tercer elemento hijo dentro del contenedor padre y le aplica un desplazamiento de 50px hacia la derecha */
+            left: 20px;
+        }
+    }
+}

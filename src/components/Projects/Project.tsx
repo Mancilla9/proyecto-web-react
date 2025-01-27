@@ -1,4 +1,5 @@
-import { IProject } from "../types/project";
+import { IProject } from "../../types/project";
+
 
 export function Project({ image, title, category }: IProject) {
     return (

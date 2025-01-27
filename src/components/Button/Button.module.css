@@ -1,0 +1,20 @@
+.btn {
+    background-color: var(--primary-color);
+    /* Establece el color de fondo del botón a la variable --primary-color */
+    border-radius: 25px;
+    /* Redondea las esquinas del botón con un radio de 10 píxeles */
+    box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60/12%);
+    /* Añade una sombra al botón con un color gris oscuro y una opacidad del 39% */
+    color: var(--white);
+    /* Establece el color del texto del botón a la variable --white */
+    display: block;
+    /* Convierte el botón en un bloque, lo que significa que ocupará todo el ancho disponible */
+    height: fit-content;
+    /* Ajusta la altura del elemento automáticamente al tamaño de su contenido, sin agregar espacio adicional */
+    padding: 16px;
+    /* Añade un espacio interno al botón con 8 píxeles de padding superior e inferior y 10 píxeles de padding izquierdo y derecho */
+    width: fit-content;
+    /* Establece el ancho del botón a un ancho que se ajuste al contenido interno */
+    text-decoration: none;
+    /* Elimina el subrayado que se muestra por defecto en los enlaces */
+}

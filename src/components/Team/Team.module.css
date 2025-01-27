@@ -1,0 +1,64 @@
+/* Team styles */
+.team {
+    background-color: var(--gray);
+    padding: 50px 0 100px;
+}
+
+.teamContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.teamList {
+    display: grid;
+    gap: 20px;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.teamStatistics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.teamStatisticsItem {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+    & h3 {
+        font-size: 41px;
+    }
+
+    & .image {
+        background-color: var(--skyblue);
+        border-radius: 100%;
+        justify-content: center;
+        width: fit-content;
+        /* Ajusta el ancho del elemento para que se ajuste exactamente al contenido, sin ser más ancho ni más estrecho que el contenido mismo */
+        padding: 16px;
+    }
+}
+
+@media (min-width:786px) {
+    .teamList {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .teamStatisticsItem {
+        gap: 10px;
+    }
+}
+
+@media (min-width:1024px) {
+    .teamContainer {
+        grid-template-columns: 1fr 2fr auto;
+    }
+
+    .teamList {
+        grid-template-columns: repeat(4, 1fr)
+    }
+}

@@ -1,0 +1,16 @@
+.details {
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.summary {
+    background-color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+
+    /* Define el grosor o peso de la fuente, donde 600 representa un peso semi-negrita, haciendo que el texto sea más grueso que el normal (400) pero menos que negrita completa (700) */
+    &::marker {
+        color: var(--primary-color);
+    }
+}
